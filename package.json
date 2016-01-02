@@ -1,0 +1,21 @@
+{
+    "name": "spa-request",
+    "version": "1.3.0",
+    "description": "XMLHttpRequest wrapper.",
+    "author": {
+        "name": "Stanislav Kalashnik",
+        "email": "darkpark.main@gmail.com"
+    },
+    "repository": "spasdk/request",
+    "scripts": {
+        "lint": "eslint *.js",
+        "jsdoc": "jsdoc --destination doc *.js readme.md"
+    },
+    "keywords": [
+        "spa",
+        "spasdk",
+        "framework",
+        "request"
+    ],
+    "license": "GPL-3.0"
+}
