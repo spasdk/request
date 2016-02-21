@@ -25,13 +25,13 @@ var request  = {},
  *
  * @param {string} url address
  * @param {Object} options Plain object with call parameters
- * @return {XMLHttpRequest|Boolean} false in case of wrong params
+ * @return {XMLHttpRequest|boolean} false in case of wrong params
  *
  * @example
  * TODO: add
  */
 request.ajax = function ( url, options ) {
-    var i, headersKeys, client;
+    var index, headersKeys, client;
 
     // init
     options = options || {};
@@ -40,10 +40,10 @@ request.ajax = function ( url, options ) {
         // plain object is given as param
         if ( options && typeof options === 'object') {
             // extend with default options
-            for ( i = 0; i < defaultsKeys.length; i++ ) {
+            for ( index = 0; index < defaultsKeys.length; index++ ) {
                 // in case not redefined
-                if ( options[defaultsKeys[i]] === undefined ) {
-                    options[defaultsKeys[i]] = defaults[defaultsKeys[i]];
+                if ( options[defaultsKeys[index]] === undefined ) {
+                    options[defaultsKeys[index]] = defaults[defaultsKeys[index]];
                 }
             }
         }
@@ -55,8 +55,8 @@ request.ajax = function ( url, options ) {
         // apply the given headers
         if ( options.headers && typeof options.headers === 'object') {
             headersKeys = Object.keys(options.headers);
-            for ( i = 0; i < headersKeys.length; i++ ) {
-                client.setRequestHeader(headersKeys[i], options.headers[headersKeys[i]]);
+            for ( index = 0; index < headersKeys.length; index++ ) {
+                client.setRequestHeader(headersKeys[index], options.headers[headersKeys[index]]);
             }
         }
 
@@ -94,14 +94,14 @@ request.ajax = function ( url, options ) {
  */
 request.encode = function ( data ) {
     var result = [],
-        i, keys;
+        index, keys;
 
     // input plain object validation
     if ( data && typeof data === 'object') {
         keys = Object.keys(data);
         // apply encoding
-        for ( i = 0; i < keys.length; i++ ) {
-            result.push(encodeURIComponent(keys[i]) + '=' + encodeURIComponent(data[keys[i]]));
+        for ( index = 0; index < keys.length; index++ ) {
+            result.push(encodeURIComponent(keys[index]) + '=' + encodeURIComponent(data[keys[index]]));
         }
         // build the list of params
         if ( result.length > 0 ) {
