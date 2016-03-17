@@ -6,6 +6,9 @@ XMLHttpRequest wrapper
 [![Gitter](https://img.shields.io/badge/gitter-join%20chat-blue.svg?style=flat-square)](https://gitter.im/DarkPark/spasdk)
 
 
+It's a demo module to show how to write network communicating modules.
+
+
 ## Installation ##
 
 ```bash
