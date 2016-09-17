@@ -79,6 +79,7 @@ request.ajax = function ( url, options ) {
 
         return client;
     }
+
     return false;
 };
 
@@ -108,6 +109,7 @@ request.encode = function ( data ) {
             return result.join('&');
         }
     }
+
     return null;
 };
 
