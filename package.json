@@ -1,6 +1,6 @@
 {
     "name": "spa-request",
-    "version": "1.3.0",
+    "version": "1.4.0",
     "description": "XMLHttpRequest wrapper.",
     "author": {
         "name": "Stanislav Kalashnik",
