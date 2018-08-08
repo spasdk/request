@@ -7,15 +7,24 @@
 
 var request  = {},
     defaults = {
-        method:    'GET',  // HTTP method to use, such as "GET", "POST", "PUT", "DELETE", etc.
-        async:     true,   // whether or not to perform the operation asynchronously
-        headers:   {},     // list of HTTP request headers
-        type:      'text', // "", "arraybuffer", "blob", "document", "json", "text"
-        data:      null,   // data to send (plain object)
-        timeout:   30000,  // amount of milliseconds a request can take before being terminated
-        onload:    null,   // callback when the request has successfully completed
-        onerror:   null,   // callback when the request has failed
-        ontimeout: null    // callback when the author specified timeout has passed before the request could complete
+        // HTTP method to use, such as "GET", "POST", "PUT", "DELETE", etc.
+        method: 'GET',
+        // whether or not to perform the operation asynchronously
+        async: true,
+        // list of HTTP request headers
+        headers: {},
+        // "", "arraybuffer", "blob", "document", "json", "text"
+        type: 'text',
+        // data to send (plain object)
+        data: null,
+        // amount of milliseconds a request can take before being terminated
+        timeout: 30000,
+        // callback when the request has successfully completed
+        onload: null,
+        // callback when the request has failed
+        onerror: null,
+        // callback when the author specified timeout has passed before the request could complete
+        ontimeout: null
     },
     defaultsKeys = Object.keys(defaults);
 
